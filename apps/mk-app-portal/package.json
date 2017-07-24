@@ -1,0 +1,46 @@
+{
+  "_from": "mk-app-portal",
+  "_id": "mk-app-portal@1.0.8",
+  "_inBundle": false,
+  "_integrity": "sha512-dtOYCQFKxJB8yZlySMa1ijrKPn2eVX9TFfMpdOqpfSmo5YjmFSUmn6ZP16bmfXg+mdAyf1QX2wFGmAHWXo+Ugg==",
+  "_location": "/mk-app-portal",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "mk-app-portal",
+    "name": "mk-app-portal",
+    "escapedName": "mk-app-portal",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/mk-app-portal/-/mk-app-portal-1.0.8.tgz",
+  "_shasum": "b8a8e0ceb3f6d2251823da792886ca86c012c857",
+  "_spec": "mk-app-portal",
+  "_where": "/home/zlj/my/github/self/mk-docs/master",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/ziaochina/mk-app-portal/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "mk-app-portal",
+  "homepage": "https://github.com/ziaochina/mk-app-portal#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "mk-app-portal",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziaochina/mk-app-portal.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.8"
+}
