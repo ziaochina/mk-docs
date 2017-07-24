@@ -5,6 +5,12 @@ import Markdown from './components/markdown'
 import './mock.js' //脱离后台测试，启用mock，否则这行注释
 
 import mdAbout from './docs/about.md'
+import mdHelloWorld from './docs/helloWorld.md'
+import mdDemo from './docs/demo.md'
+import mdCore from './docs/core.md'
+import mdAppTemplates from './docs/appTemplates.md'
+import mdServiceTemplates from './docs/serviceTemplates.md'
+import mdCmd from './docs/cmd.md'
 
 var _options = {}
 
@@ -38,20 +44,37 @@ function config(options) {
 				name: '关于',
 				isDefault: true,
 				appName: 'markdown',
-				appParams:{content:mdAbout}
+				appParams: { content: mdAbout }
 			}, {
 				key: '2',
-				name: 'apps',
-				isExpand: true,
-				children: [{
-					key: '201',
-					name: 'app1',
-					appName: 'mk-app-portal-app1'
-				}, {
-					key: '202',
-					name: 'app2',
-					appName: 'mk-app-portal-app2'
-				}]
+				name: 'hello world',
+				appName: 'markdown',
+				appParams: { content: mdHelloWorld }
+			}, {
+				key: '3',
+				name: '复杂项目创建过程',
+				appName: 'markdown',
+				appParams: { content: mdDemo }
+			}, {
+				key: '4',
+				name: '核心项目',
+				appName: 'markdown',
+				appParams: { content: mdCore }
+			}, {
+				key: '5',
+				name: 'app模板项目',
+				appName: 'markdown',
+				appParams: { content: mdAppTemplates }
+			}, {
+				key: '6',
+				name: 'service模板项目',
+				appName: 'markdown',
+				appParams: { content: mdServiceTemplates }
+			}, {
+				key: '7',
+				name: 'mk常用命令',
+				appName: 'markdown',
+				appParams: { content: mdCmd }
 			}]
 		}
 	})

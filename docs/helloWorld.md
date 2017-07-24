@@ -1,4 +1,4 @@
-# 快速创建helloWorld网站
+# 快速创建hello world网站
 
 ## 1、安装mk-tools命令行工具
 
@@ -18,5 +18,26 @@ $ cd helloWorld
 ```
 $ mkdir apps
 $ cd apps
-$ mk app 
+$ mk app firstApp
+$ cd ..
 ```
+
+## 4、编译
+- 编译会生成index.js,mock.js,apps.less 文件
+```
+$ mk compile
+```
+
+## 5、修改website配置
+
+```
+//打开config.js，修改_options.startAppName的值
+_options.startAppName = 'firstApp' //启动app名，需要根据实际情况配置
+```
+
+## 6、启动website
+
+```
+$ npm start
+```
+
