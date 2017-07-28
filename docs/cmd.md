@@ -3,38 +3,68 @@
 ## 安装
 
 ```
-$ npm i -g mk-tools
+$ sudo npm i -g mk-tools
 ```
 
-## 创建空网站
+## 创建Website
 
 ```
-$ mk website [website name，可空]
+$ mk website [website name //网站名称，可空， 默认"website-demo"]
 ```
 
-## 创建应用
+## 创建App
 
 ```
-$ mk app [app name, 可空]
+$ mk app [app name //app名称，可空，默认"app-demo"]
 ```
 
-## 克隆应用
+
+## 创建空Sever
 
 ```
-$ mk clone [app name, npmjs发布的应用， 可空]
+$ mk server [server name //server名称，可空，默认"server-demo"]
+```
+
+## 创建Service
+
+```
+$ mk service [service name //service名称，可空,默认：“service-demo”]
+```
+
+## 克隆App
+
+```
+$ mk clone <app name//npmjs发布的App或者Service> <targetPath //目标路径，路径如果以/结尾那么会在/后面加上app name>
 ```
 
 ## 编译
-- 编译会遍历所有目录下app， 生成index.js, mock.js,  apps.less
+
 ```
-$ mk compile
+$ mk compile <'website' or 'server' //编译网站或者服务>
 ```
 
-## 创建server（待续）
 
-## 创建service（待续）
+## 完整演示创建一个网站
 
-## 克隆service（待续）
+```
+$ sudo npm i -g mk-tools
+$ mk website www
+$ cd www
+$ mk clone mk-app-root apps/
+$ mk compile website
+$ npm start
+```
 
+## 完整演示创建一个server
+
+
+```
+$ sudo npm i -g mk-tools
+$ mk server server
+$ cd server
+$ mk clone mk-server-login service/
+$ mk compile server
+$ node index.js
+```
 
 
