@@ -50,7 +50,7 @@ $ mk compile <'website' or 'server' //编译网站或者服务>
 $ sudo npm i -g mk-tools
 $ mk website www
 $ cd www
-$ mk clone mk-app-root apps/
+$ mk clone mk-app-login apps/
 $ mk compile website
 $ npm start
 ```
@@ -62,7 +62,7 @@ $ npm start
 $ sudo npm i -g mk-tools
 $ mk server server
 $ cd server
-$ mk clone mk-server-login service/
+$ mk clone mk-service-login services/
 $ mk compile server
 $ node index.js
 ```

@@ -16,16 +16,13 @@ $ cd helloWorld
 ## 3、在website创建一个app
 
 ```
-$ mkdir apps
-$ cd apps
-$ mk app firstApp
-$ cd ..
+$ mkdir apps/firstApp
 ```
 
 ## 4、编译
 - 编译会生成index.js,mock.js,apps.less 文件
 ```
-$ mk compile
+$ mk compile website
 ```
 
 ## 5、修改website配置
