@@ -10,24 +10,26 @@ $ npm i -g mk-tools
 ## 2、创建空website
 
 ```
-$ mk website myDemo
-$ cd myDemo
+$ mk website my-demo
+$ cd my-demo
 ```
 
 ## 3、clone应用
 
+请将下面命令逐条执行
+
 ```
-$ mk clone mk-app-root apps/
-$ mk clone mk-app-login apps/
-$ mk clone mk-app-portal apps/
-$ mk clone mk-app-person-list apps/
-$ mk clone mk-app-person-card apps/
+$ mk clone mk-app-root apps/root
+$ mk clone mk-app-login apps/login
+$ mk clone mk-app-portal apps/portal
+$ mk clone mk-app-person-list apps/person/list
+$ mk clone mk-app-person-card apps/person/card
 ```
 
 ## 4、修改website配置文件
 
 ```
-//修改文件：myDemo/config.js
+//修改文件：my-demo/config.js
 //也可以直接进apps目录根据自己需求修改app内容
 ...
 	_options.apps && _options.apps.config({
