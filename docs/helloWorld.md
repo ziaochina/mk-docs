@@ -16,7 +16,7 @@ $ cd helloWorld
 ## 3、在website创建一个app
 
 ```
-$ mkdir apps/firstApp
+$ mk app apps/firstApp
 ```
 
 ## 4、编译
