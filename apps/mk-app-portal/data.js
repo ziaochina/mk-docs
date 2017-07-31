@@ -26,38 +26,15 @@ export function getMeta() {
 				component: 'Layout',
 				className: 'mk-app-portal-header-right',
 				children: [{
-					name: 'notification',
+					name:'code',
+					component: '::a',
+					children:'查看github代码',
+					onClick:'{{$github}}'
+				},{
+					name: 'github',
 					component: 'Icon',
-					type: 'notification'
-				}, {
-					name: 'setting',
-					component: 'Icon',
-					type: 'setting'
-				}, {
-					name: 'photo',
-					component: '::img',
-					className: 'mk-app-portal-header-right-photo',
-					src: '{{$getPhoto()}}'
-				}, {
-					name: 'my',
-					component: 'Dropdown',
-					overlay: {
-						name: 'myMenu',
-						component: 'Menu',
-						onClick: '{{$myMenuClick}}',
-						children: [{
-							name: 'logout',
-							component: 'Menu.Item',
-							key: 'logout',
-							children: 'logout'
-						}]
-					},
-					children: {
-						name: 'me',
-						component: '::a',
-						style: { fontSize: 15 },
-						children: 'monkey king'
-					}
+					type: 'github',
+					onClick:'{{$github}}'
 				}]
 			}]
 		}, {

@@ -69,13 +69,8 @@ class action {
         }
     }
 
-    myMenuClick = (e) => {
-        if (e.key == 'logout') {
-            if (this.component.props.onRedirect && this.config.goAfterLogout) {
-                this.metaAction.context.set('user', undefined)
-                this.component.props.onRedirect(this.config.goAfterLogout)
-            }
-        }
+    github = () =>{
+        window.open('https://www.github.com/ziaochina/mk-docs')
     }
 }
 
