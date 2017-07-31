@@ -35,7 +35,7 @@ $ mk clone mk-app-person-card apps/person/card
 	_options.apps && _options.apps.config({
 		//'*': { webapi } //正式网站应该有一个完整webapi对象，提供所有web请求函数
 		'mk-app-root': {
-			defaultAppName: 'mk-app-login'
+			startAppName: 'mk-app-login'
 		},
 		'mk-app-login': {
 			goAfterLogin: {

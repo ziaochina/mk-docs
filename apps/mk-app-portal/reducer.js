@@ -1,6 +1,7 @@
 import { Map, fromJS } from 'immutable'
 import { reducer as MetaReducer } from 'mk-meta-engine'
 import config from './config'
+import { getInitState } from './data'
 
 class reducer {
     constructor(option) {
@@ -9,17 +10,8 @@ class reducer {
     }
 
     init = (state, option) => {
-        const data = {
-            data: {
-                menu: [],
-                menuDefaultSelectedKeys: [],
-                menuDefaultOpenKeys: [],
-                content: {}
-            }
-        }
+        state = this.metaReducer.init(state, getInitState())
 
-        state = this.metaReducer.init(state, data)
-        
         if (this.config.menu && !this.config.webapi.getMenu) {
             return this.load(state, { menu: this.config.menu })
         }
