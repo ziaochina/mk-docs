@@ -5,3 +5,10 @@
 - 使用markdown写的相关文档
 
 - 本网站也是用mk框架创建
+
+## 运行本项目
+
+```
+$ npm install
+$ npm start
+```
