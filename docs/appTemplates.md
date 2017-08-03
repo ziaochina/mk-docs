@@ -4,7 +4,7 @@ App模板项目，依赖mk核心项目实现的，并发布到npmjs，可以使�
 
 ## 1、mk-app-root <a href="https://github.com/ziaochina/mk-app-root" target="_blank">[代码]</a>  <a href="https://ziaochina.github.io/mk-app-root" target="_blank">[在线demo]</a>
 
-- root模板可以作为website的start app使用，它赋予子组件或app,redirect能力
+- root模板，可以作为website的start app使用，它赋予子组件或app,redirect能力
 
 <img width="450" height="300" src="./img/root.png"/>
 
@@ -22,12 +22,25 @@ App模板项目，依赖mk核心项目实现的，并发布到npmjs，可以使�
 
 ## 4、mk-app-person-list <a href="https://github.com/ziaochina/mk-app-person-list" target="_blank">[代码]</a>  <a href="https://ziaochina.github.io/mk-app-person-list" target="_blank">[在线demo]</a>
 
-- 人员列表模板，克隆后根据需求修改
+- 列表模板，克隆后根据需求修改
 
 <img width="450" height="300" src="./img/personlist.png"/>
 
 ## 5、mk-app-person-card  <a href="https://github.com/ziaochina/mk-app-person-card" target="_blank">[代码]</a>  <a href="https://ziaochina.github.io/mk-app-person-card" target="_blank">[在线demo]</a>
 
-- 人员卡片模板，克隆后根据需求修改
+- 卡片模板，克隆后根据需求修改
 
 <img width="450" height="300" src="./img/personcard.png"/>
+
+## 6、mk-app-bar-graph  <a href="https://github.com/ziaochina/mk-app-bar-graph" target="_blank">[代码]</a>  <a href="https://ziaochina.github.io/mk-app-bar-graph" target="_blank">[在线demo]</a>
+
+- 柱状图模板，克隆后根据需求修改
+
+<img width="450" height="300" src="./img/bargraph.png"/>
+
+
+## 7、mk-app-complex-table  <a href="https://github.com/fengzhike/mk-app-complex-table" target="_blank">[代码]</a>  <a href="https://fengzhike.github.io/mk-app-complex-table" target="_blank">[在线demo]</a>
+
+- 复杂表格模板，克隆后根据需求修改
+
+<img width="450" height="300" src="./img/complextable.png"/>
