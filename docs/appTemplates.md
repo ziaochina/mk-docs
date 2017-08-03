@@ -4,7 +4,7 @@ App模板项目，依赖mk核心项目实现的，并发布到npmjs，可以使�
 
 ## 1、mk-app-root <a href="https://github.com/ziaochina/mk-app-root" target="_blank">[代码]</a>  <a href="https://ziaochina.github.io/mk-app-root" target="_blank">[在线demo]</a>
 
-- 该模板可以作为website的start app使用，它赋予子组件或app,redirect能力
+- root模板可以作为website的start app使用，它赋予子组件或app,redirect能力
 
 <img width="450" height="300" src="./img/root.png"/>
 
