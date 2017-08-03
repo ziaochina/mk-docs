@@ -44,3 +44,12 @@ App模板项目，依赖mk核心项目实现的，并发布到npmjs，可以使�
 - 复杂表格模板，克隆后根据需求修改
 
 <img width="450" height="300" src="./img/complextable.png"/>
+
+
+## 7、mk-app-editable-table  <a href="https://github.com/ziaochina/mk-app-editable-table" target="_blank">[代码]</a>  <a href="https://ziaochina.github.io/mk-app-editable-table" target="_blank">[在线demo]</a>
+
+- 可编辑表格模板，克隆后根据需求修改
+
+<img width="450" height="300" src="./img/editabletable.png"/>
+
+ 
