@@ -26,15 +26,24 @@ export function getMeta() {
 				component: 'Layout',
 				className: 'mk-app-portal-header-right',
 				children: [{
-					name:'code',
-					component: '::a',
-					children:'查看github代码',
-					onClick:'{{$github}}'
-				},{
-					name: 'github',
-					component: 'Icon',
-					type: 'github',
-					onClick:'{{$github}}'
+					name: 'topMenu',
+					component: 'Menu',
+					mode: 'horizontal',
+					theme: 'dark',
+					style: {backgroundColor:'#333'},
+					onClick: '{{$topMenuClick}}',
+					selectedKeys:[],
+					children: [{
+						name: 'github',
+						component: 'Menu.Item',
+						key: 'github',
+						children: '源代码（GITHUB）'
+					}, {
+						name: 'gitter',
+						component: 'Menu.Item',
+						key: 'gitter',
+						children: '聊天（GITTER） '
+					}]
 				}]
 			}]
 		}, {

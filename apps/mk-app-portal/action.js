@@ -21,7 +21,7 @@ class action {
     load = async () => {
         if (this.webapi.getMenu) {
             const menu = await this.webapi.getMenu()
-            this.injections.reduce('load', {menu})
+            this.injections.reduce('load', { menu })
         }
     }
 
@@ -47,6 +47,15 @@ class action {
         return loop(menu)
     }
 
+    topMenuClick = (e) => {
+        if (e.key == 'github') {
+            window.open('https://www.github.com/ziaochina/mk-docs')
+        }
+        else if (e.key == 'gitter') {
+            window.open('https://gitter.im/mk-js/mk-js?utm_source=share-link&utm_medium=link&utm_campaign=share-link')
+        }
+    }
+
     menuClick = (e) => {
 
         const menu = this.metaAction.gf('data.menu').toJS()
@@ -67,10 +76,6 @@ class action {
         if (hit) {
             this.injections.reduce('setContent', hit.appName, hit.appParams)
         }
-    }
-
-    github = () =>{
-        window.open('https://www.github.com/ziaochina/mk-docs')
     }
 }
 
