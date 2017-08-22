@@ -64,3 +64,8 @@ App模板项目，依赖mk核心项目实现的，并发布到npmjs，可以使�
 
 <img width="450" height="300" src="./img/voucher.png"/>
  
+ ## 10、mk-app-register  <a href="https://github.com/ziaochina/mk-app-register" target="_blank">[代码]</a>  <a href="https://ziaochina.github.io/mk-app-register" target="_blank">[在线demo]</a>
+
+- 注册模板，克隆后根据需求修改
+
+<img width="450" height="300" src="./img/register.png"/>
