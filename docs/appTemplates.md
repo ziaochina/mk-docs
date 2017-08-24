@@ -69,3 +69,22 @@ App模板项目，依赖mk核心项目实现的，并发布到npmjs，可以使�
 - 注册模板，克隆后根据需求修改
 
 <img width="450" height="300" src="./img/register.png"/>
+
+ ## 12、mk-app-forgot-password  <a href="https://github.com/ziaochina/mk-app-forgot-password" target="_blank">[代码]</a>  <a href="https://ziaochina.github.io/mk-app-forgot-password" target="_blank">[在线demo]</a>
+
+- 忘记密码模板，克隆后根据需求修改
+
+<img width="450" height="300" src="./img/forgotPassword.png"/>
+
+ ## 13、mk-app-modify-password  <a href="https://github.com/ziaochina/mk-app-modify-password" target="_blank">[代码]</a>  <a href="https://ziaochina.github.io/mk-app-modify-password" target="_blank">[在线demo]</a>
+
+- 修改密码模板，克隆后根据需求修改
+
+<img width="450" height="300" src="./img/modifyPassword.png"/>
+
+ ## 14、mk-app-my-setting  <a href="https://github.com/ziaochina/mk-app-my-setting" target="_blank">[代码]</a>  <a href="https://ziaochina.github.io/mk-app-my-setting" target="_blank">[在线demo]</a>
+
+- 个人设置模板，克隆后根据需求修改
+
+<img width="450" height="300" src="./img/mySetting.png"/>
+
