@@ -32,6 +32,28 @@ $ mk clone mk-app-person-card apps/person/card
 //修改文件：my-demo/config.js
 //也可以直接进apps目录根据自己需求修改app内容
 ...
+
+fetch.config({
+	mock: true, //脱离后台测试，启用mock，否则这行注释
+
+	//fetch支持切面扩展（before,after），对restful api统一做返回值或者异常处理
+	after: (response, url) => {
+		if (response.result) {
+			console.log(url, response)
+			if(response.token){ //登录后设置accessToken,根据需要调整
+				fetch.config({token:response.token})
+			}
+			return response.value
+		}
+		else {
+			Toast.error(response.error.message)
+			throw { url, response }
+		}
+	}
+})
+
+....
+
 	_options.apps && _options.apps.config({
 		//'*': { webapi } //正式网站应该有一个完整webapi对象，提供所有web请求函数
 		'mk-app-root': {
