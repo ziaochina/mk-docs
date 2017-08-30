@@ -80,7 +80,6 @@ function config(options) {
 			},{
 				key: '8',
 				name: '关于',
-				isDefault: true,
 				appName: 'markdown',
 				appParams: { content: mdAbout }
 			}]
