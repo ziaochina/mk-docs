@@ -6,6 +6,7 @@ import './mock.js' //脱离后台测试，启用mock，否则这行注释
 
 import mdAbout from './docs/about.md'
 import mdHelloWorld from './docs/helloWorld.md'
+import mdDemoList from './docs/demoList.md'
 import mdDemo from './docs/demo.md'
 import mdCore from './docs/core.md'
 import mdAppTemplates from './docs/appTemplates.md'
