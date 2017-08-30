@@ -42,10 +42,10 @@ function config(options) {
 		'mk-app-portal': {
 			menu: [{
 				key: '1',
-				name: '关于',
+				name: '示例',
 				isDefault: true,
 				appName: 'markdown',
-				appParams: { content: mdAbout }
+				appParams: { content: mdDemoList }
 			}, {
 				key: '2',
 				name: 'hello world',
@@ -76,6 +76,12 @@ function config(options) {
 				name: 'mk常用命令',
 				appName: 'markdown',
 				appParams: { content: mdCmd }
+			},{
+				key: '8',
+				name: '关于',
+				isDefault: true,
+				appName: 'markdown',
+				appParams: { content: mdAbout }
 			}]
 		}
 	})
