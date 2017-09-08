@@ -112,3 +112,15 @@ App模板项目，依赖mk核心项目实现的，并发布到npmjs，可以使�
 
 <img width="450" height="300" src="./img/product.png"/>
 
+ ## 19、mk-app-devtools  <a href="https://github.com/ziaochina/mk-app-devtools" target="_blank">[代码]</a>  <a href="https://ziaochina.github.io/mk-app-devtools" target="_blank">[在线demo]</a>
+
+- 开发者工具模板，克隆后根据需求修改
+
+<img width="450" height="300" src="./img/devtools.png"/>
+
+## 20、mk-app-meta-design  <a href="https://github.com/ziaochina/mk-app-meta-design" target="_blank">[代码]</a>  <a href="https://ziaochina.github.io/mk-app-meta-design" target="_blank">[在线demo]</a>
+
+- 元数据设计模板，克隆后根据需求修改
+
+<img width="450" height="300" src="./img/metaDesign.png"/>
+
