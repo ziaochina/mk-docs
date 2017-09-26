@@ -6,6 +6,8 @@
 
 - 本网站也是用mk框架创建
 
+- 在线访问:[https://ziaochina.github.io/mk-docs/](https://ziaochina.github.io/mk-docs/)
+
 ## 运行本项目
 
 ```
