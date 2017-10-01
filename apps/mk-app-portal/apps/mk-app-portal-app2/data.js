@@ -1,7 +1,8 @@
 export function getMeta() {
 	return {
 		name: 'root',
-		component: '::div',
+		component: 'Layout',
+		className: 'mk-app-portal-app2',
 		children: 'app2'
 	}
 }

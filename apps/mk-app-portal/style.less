@@ -15,7 +15,8 @@
 		height:54px;
 		background-color: #333;
 		color:#fff;
-		overflow: hidden;
+		overflow: visible;
+		z-index: 2;
 
 		&-left{
 			flex:1;
@@ -23,39 +24,56 @@
 			align-items: center;
 			
 			&-logo {
-				width: 100px;
-				height: 100px;
+				width: 50px;
+				height: 50px;
 			}
 
 			h1{
 				color:#fff;
 			}
-
 		}
 		&-right{
 			display:flex;
 			flex-direction:row;
 			align-items:center;
 			justify-content: flex-end;
-			i{
-				font-size: 25px;
-				cursor:pointer;
-				margin-right: 30px;
+			overflow: visible;
+
+			&-my-title{
+				display: flex;
+    			flex-direction: row;
+				align-items: center;
+				height: 46px;
+			}
+
+			.mk-menu > li{
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+
+				i{
+					font-size: 18px;
+				}
 
 			}
 
 			&-photo {
-			    width: 40px;
-    			height: 40px;
+			    width: 30px;
+    			height: 30px;
     			border-radius: 30px;
     			margin-right: 10px;
 			}
 		}
-
 	}
-
 	
-
+	&-content-tabs{
+		flex: 0 0 37px;
+		.ant-tabs-bar{
+			margin-bottom: 0px;
+			padding: 5px 0px 0px 5px;
+			background: cornsilk;
+		}
+	}
 	&-content{
 		height:100%;
 		display:flex;
@@ -71,9 +89,12 @@
 
 		&-main{
 			flex: 1 1 auto;
-			background-color:#fff;
-			padding:10px;
+			background-color:#eee;
+			padding:20px;
 			overflow:auto;
+			& > div {
+				background-color: #fff;
+			}
 		}
 	}
 }
