@@ -15,6 +15,7 @@ class action {
     }
 
     getContent = () =>{
+        debugger
         return this.component.props.content
     }
 }

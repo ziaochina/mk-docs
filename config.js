@@ -46,41 +46,49 @@ function config(options) {
 				name: '示例',
 				isDefault: true,
 				appName: 'markdown?id=1',
+				icon: 'heart',
 				appParams: { content: mdDemoList }
 			}, {
 				key: '2',
 				name: 'hello world',
 				appName: 'markdown?id=2',
+				icon: 'smile',
 				appParams: { content: mdHelloWorld }
 			}, {
 				key: '3',
 				name: '复杂项目创建过程',
 				appName: 'markdown?id=3',
+				icon: 'like',
 				appParams: { content: mdDemo }
 			}, {
 				key: '4',
 				name: '核心项目',
 				appName: 'markdown?id=4',
+				icon: 'pay-circle',
 				appParams: { content: mdCore }
 			}, {
 				key: '5',
 				name: 'app模板项目',
 				appName: 'markdown?id=5',
+				icon: 'appstore',
 				appParams: { content: mdAppTemplates }
 			}, {
 				key: '6',
 				name: 'service模板项目',
 				appName: 'markdown?id=6',
+				icon: 'cloud',
 				appParams: { content: mdServiceTemplates }
 			}, {
 				key: '7',
 				name: 'mk常用命令',
 				appName: 'markdown?id=7',
+				icon: 'code',
 				appParams: { content: mdCmd }
 			},{
 				key: '8',
 				name: '关于',
 				appName: 'markdown?id=8',
+				icon: 'question-circle',
 				appParams: { content: mdAbout }
 			}]
 		}

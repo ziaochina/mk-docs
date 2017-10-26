@@ -36,7 +36,7 @@ class action {
             return
         }
 
-        this.setContent('', targetAppName, {})
+        this.setContent('', targetAppName)
     }
 
 
@@ -67,6 +67,9 @@ class action {
             }
         }
 
+        if (response.menu) {
+            this.injections.reduce('load', { menu: response.menu })
+        }
         /*
         如果菜单从ajax获取，那么使用下面的方式
         if (this.webapi.getMenu) {
@@ -84,32 +87,60 @@ class action {
     getMenuChildren = () => {
         const menu = this.metaAction.gf('data.menu').toJS()
 
-        const loop = (children) => {
+        const loop = (children, level) => {
             const ret = []
             children.forEach(child => {
+                
+                let ele = {
+                    name: child.key,
+                    key: child.key
+                }
+
                 if (!child.children) {
-                    ret.push({
-                        name: child.key,
-                        key: child.key,
-                        component: 'Menu.Item',
-                        children: child.name
-                    })
+                    ele.component  = 'Menu.Item'
+
+                    if (child.icon || level == 1) {
+                        ele.children = [{
+                            name: 'icon',
+                            component: 'Icon',
+                            type: child.icon || 'desktop'
+                        }, {
+                            name: 'name',
+                            component: '::span',
+                            children: child.name
+                        }]
+                    }
+                    else {
+                        ele.children = child.name
+                    }
                 }
                 else {
-                    ret.push({
-                        name: child.key,
-                        key: child.key,
-                        title: child.name,
-                        component: 'Menu.SubMenu',
-                        children: loop(child.children)
-                    })
+                    ele.component  = 'Menu.SubMenu'
+                    ele.children = loop(child.children, level + 1)
+
+                    if (child.icon || level == 1) {
+                        ele.title = [{
+                            name: 'icon',
+                            component: 'Icon',
+                            type: child.icon || 'desktop'
+                        }, {
+                            name: 'name',
+                            component: '::span',
+                            children: child.name
+                        }]
+                    }
+                    else {
+                        ele.title = child.name
+                    }
                 }
+
+                ret.push(ele)
             })
             return ret
         }
         return {
             _isMeta: true,
-            value: loop(menu)
+            value: loop(menu, 1)
         }
 
     }
@@ -166,7 +197,6 @@ class action {
         if (!content) return
         const menuKeyNameMap = this.metaAction.gf('data.menuKeyNameMap')
         return [menuKeyNameMap.get(content.get('name'))]
-
     }
     tabChange = (key) => {
         const openTabs = this.metaAction.gf('data.openTabs')
@@ -180,12 +210,12 @@ class action {
         }
     }
 
-    setContent = (name, appName, appProps = {}) => {
+    setContent = (name, appName, appProps) => {
         this.injections.reduce('setContent', name, appName, appProps)
     }
 
     foldMenu = () => {
-        this.metaAction.sf('data.isShowMenu', !this.metaAction.gf('data.isShowMenu'))
+        this.metaAction.sf('data.isFoldMenu', !this.metaAction.gf('data.isFoldMenu'))
         setTimeout(function () {
             var event = document.createEvent('HTMLEvents')
             event.initEvent("resize", true, true)
