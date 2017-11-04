@@ -18,9 +18,3 @@
 - 截图：
 
 <img width="450" height="300" src="./img/demo.png"/>
-
-## 3、企业门户node版(进行中)
-- 内容：前端Website、App、后端Server、Service、DB
-
-## 4、企业门户微服务版(进行中)
-- 内容：前端Website、App、后端Server、Service、DB、zookeeper、dubbox、java

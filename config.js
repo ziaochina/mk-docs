@@ -1,6 +1,6 @@
 import { Toast, Notification, Modal } from 'mk-component'
 import { componentFactory } from 'mk-meta-engine'
-import { fetch } from 'mk-utils'
+import { fetch,history } from 'mk-utils'
 import Markdown from './components/markdown'
 import './mock.js' //脱离后台测试，启用mock，否则这行注释
 
@@ -31,6 +31,30 @@ fetch.config({
 	}
 })
 
+//支持url hash别名配置
+history.config({
+	isAlias: (pathName) => {
+		if(!pathName || pathName == '/')
+			return false
+		const reg = /\/(mk-app-portal\/){0,1}([\s\S]+)/
+		const ret = pathName.match(reg)
+		return !ret[1]
+	},
+	toAlias: (pathName) => {
+		if(!pathName || pathName == '/')
+			return false
+		const reg = /\/(mk-app-portal\/){0,1}([\s\S]+)/
+		return pathName.replace(reg, (all,  portal, app) => {
+			return all.replace(portal, '').replace(/markdown\?v=/g, '')
+		})
+	},
+	toRealName: (pathName) => {pathName.replace('/','')
+		return `/mk-app-portal/markdown?v=${pathName.replace('/','')}`
+		
+	}
+})
+
+
 //元数据引擎注册markdown组件
 componentFactory.registerComponent('Markdown', Markdown)
 
@@ -45,49 +69,49 @@ function config(options) {
 				key: '1',
 				name: '示例',
 				isDefault: true,
-				appName: 'markdown?id=1',
+				appName: 'markdown?v=example',
 				icon: 'heart',
 				appParams: { content: mdDemoList }
 			}, {
 				key: '2',
 				name: 'hello world',
-				appName: 'markdown?id=2',
+				appName: 'markdown?v=new-helloworld',
 				icon: 'smile',
 				appParams: { content: mdHelloWorld }
 			}, {
 				key: '3',
 				name: '复杂项目创建过程',
-				appName: 'markdown?id=3',
+				appName: 'markdown?v=new-project',
 				icon: 'like',
 				appParams: { content: mdDemo }
 			}, {
 				key: '4',
 				name: '核心项目',
-				appName: 'markdown?id=4',
+				appName: 'markdown?v=core',
 				icon: 'pay-circle',
 				appParams: { content: mdCore }
 			}, {
 				key: '5',
 				name: 'app模板项目',
-				appName: 'markdown?id=5',
+				appName: 'markdown?v=app-template',
 				icon: 'appstore',
 				appParams: { content: mdAppTemplates }
 			}, {
 				key: '6',
 				name: 'service模板项目',
-				appName: 'markdown?id=6',
+				appName: 'markdown?v=service-template',
 				icon: 'cloud',
 				appParams: { content: mdServiceTemplates }
 			}, {
 				key: '7',
 				name: 'mk常用命令',
-				appName: 'markdown?id=7',
+				appName: 'markdown?v=cmd',
 				icon: 'code',
 				appParams: { content: mdCmd }
 			},{
 				key: '8',
 				name: '关于',
-				appName: 'markdown?id=8',
+				appName: 'markdown?v=about',
 				icon: 'question-circle',
 				appParams: { content: mdAbout }
 			}]
