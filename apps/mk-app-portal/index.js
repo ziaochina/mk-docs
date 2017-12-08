@@ -3,7 +3,7 @@ import * as data from './data'
 
 export default {
 	name: "mk-app-portal",
-	version: "1.0.42",
+	version: "1.0.45",
 	description: "mk-app-portal",
 	meta: data.getMeta(),
 	components: [],

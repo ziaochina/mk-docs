@@ -24,12 +24,12 @@
   "author": "Liujian Zhang <ziaochina@gmail.com> (http://github.com/ziaochina)",
   "license": "MIT",
   "dependencies": {
-    "mk-component": "^1.0.45",
-    "mk-meta-engine": "^1.0.59",
-    "mk-utils": "^1.0.51",
-    "moment": "^2.19.1",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "mk-component": "^1.0.58",
+    "mk-meta-engine": "^1.0.61",
+    "mk-utils": "^1.0.55",
+    "moment": "^2.19.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "url-loader": "^0.6.2"
   },
   "devDependencies": {
@@ -51,9 +51,9 @@
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
     "markdown-loader": "^2.0.1",
-    "marked": "^0.3.6",
+    "marked": "^0.3.7",
     "style-loader": "^0.18.2",
-    "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.3"
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
   }
 }

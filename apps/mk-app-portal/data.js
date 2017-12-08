@@ -107,6 +107,7 @@ export function getMeta() {
 				name: 'left',
 				component: 'Layout',
 				className: "{{'mk-app-portal-content-left mk-app-portal-content-left-' + (data.isFoldMenu?'fold':'unfold') }}",
+				style: "{{({overflow:data.isFoldMenu?'visible':'auto'})}}",
 				children: [{
 					name: 'menu',
 					component: 'Menu',
@@ -161,6 +162,7 @@ export function getMeta() {
 		}, {
 			name: 'issue',
 			component: 'Movable',
+			_visible: false,
 			onClick: '{{$issueClick}}',
 			style: {
 				bottom: 30,
