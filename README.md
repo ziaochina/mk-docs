@@ -1,3 +1,9 @@
+> 新版框架已于2018.10.24号正式发布:
+
+> 官网：https://www.makajs.org
+
+> 代码: https://github.com/makajs/maka
+
 # mk-docs
 
 - mk系列介绍网站
